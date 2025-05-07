@@ -92,7 +92,7 @@ int main() {
     node *root = NULL;
     int data;
     char ans;
-
+/*
     do {
         cout << "\nEnter data => ";
         cin >> data;
@@ -103,6 +103,16 @@ int main() {
         cin >> ans;
 
     } while (ans == 'y' || ans == 'Y');
+*/
+    int n;
+    cout << "enter total number of nodes";
+    cin >> n;
+
+    while(n) {
+    data = n;
+    root = b.insert(root, data);
+    n = n - 1;
+}
 
     cout << "\nBreadth First Traversal (BFS):";
     b.bfs(root);
