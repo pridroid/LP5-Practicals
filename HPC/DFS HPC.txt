@@ -46,6 +46,8 @@ cout << "Enter Pair of edges:" ;
     	int u, v;
     		
     	cin >> u >> v;
+	u = i;   //new
+	v = i + 1;     //new
 //u and v: Pair of edges
     	graph[u].push_back(v);
     	graph[v].push_back(u);
